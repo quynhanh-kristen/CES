@@ -1,0 +1,134 @@
+﻿@page "/login"
+{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <style>
+        /* Styles for the blue field */
+        .blue-field {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 25%;
+            background-color: #0c0c16;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Styles for the logo */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background-image: url("logo.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for the login form */
+        form {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            max-width: 500px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #0077c2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Styles for the help link */
+        .help-link {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+        .help-bubble {
+            position: absolute;
+            left: 20px;
+            bottom: 30px;
+            background-color: white;
+            color: #0077c2;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            display: none;
+        }
+
+        /* Styles for the language select */
+        .language-select {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        // Show the help bubble when the help link is clicked
+        function showHelp() {
+            var helpBubble = document.querySelector('.help-bubble');
+            helpBubble.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="blue-field">
+        <div class="help-link" onclick="showHelp()">Help</div>
+        <div class="help-bubble">Login page for EITC employees to use the booking system</div>
+
+        </div>
+    </div>
+    <form>
+        <div class="logo"></div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit" formaction="/booking">Login</button>
+        
+    </form>
+    <div class="language-select">
+        <select>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+</body>
+</html>
