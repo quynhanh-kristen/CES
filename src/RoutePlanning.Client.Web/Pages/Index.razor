@@ -1,0 +1,32 @@
+﻿@page "/"
+
+<PageTitle>RoutePlanner</PageTitle>
+
+<h1>RoutePlanner</h1>
+
+<p>
+    This application is an <i>Accelerator</i> to get you started on a route-planning application.
+    <br />
+    It also serves as an entry point to get introduced to the <a target="_blank" href="https://source.netcompany.com/tfs/Foundations/DOTNET">Netcompany Foundation</a>.
+</p>
+
+<h4>Getting started</h4>
+<ol>
+    <li>Try the <a href="distancecalculator">Distance Calculator</a> and the authentication mentioned below!</li>
+    <li>Read the <a href="documentation">technical documentation</a> to get an overview of the technical architecture in this accelerator.</li>
+    <li>Browse the code to figure out the details and make your own changes.</li>
+</ol>
+
+<p>Good luck :)</p>
+
+
+<h5>Authentication</h5>
+<p>You can try the login in the top right corner with the following credentials:</p>
+<ul class="mb-4">
+    <li>Username: alice</li>
+    <li>Password: alice123!</li>
+</ul>
+
+<AuthorizeView>
+    <span class="alert alert-success"><span class="oi oi-lock-locked" aria-hidden="true"></span> This content requires authentication. You are logged in as @context.User.Identity?.Name</span>
+</AuthorizeView>

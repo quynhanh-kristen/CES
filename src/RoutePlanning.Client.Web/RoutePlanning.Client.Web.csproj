@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" Version="6.0.16" />
+    <PackageReference Include="Netcompany.Net.ErrorHandling.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="Netcompany.Net.Logging.Serilog" Version="1.0.0" />
+    <PackageReference Include="Netcompany.Net.UnitOfWork.Cqs" Version="1.0.1" />
+    <PackageReference Include="Netcompany.Net.Validation.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="Netcompany.Net.Validation.Cqs" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RoutePlanning.Application\RoutePlanning.Application.csproj" />
+    <ProjectReference Include="..\RoutePlanning.Infrastructure\RoutePlanning.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

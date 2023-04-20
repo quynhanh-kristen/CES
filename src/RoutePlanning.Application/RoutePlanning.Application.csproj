@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Netcompany.Net.Cqs" Version="1.0.0" />
+    <PackageReference Include="Netcompany.Net.Validation" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RoutePlanning.Domain\RoutePlanning.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

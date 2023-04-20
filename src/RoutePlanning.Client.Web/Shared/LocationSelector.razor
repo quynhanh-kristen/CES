@@ -1,0 +1,24 @@
+﻿@using RoutePlanning.Application.Locations.Queries.SelectableLocationList;
+<div class="form-group row mb-3">
+    <label for="formControlSelect" class="col-sm-2 col-form-label">@Label</label>
+    <div class="col-sm-4">
+        @if (Locations == null)
+        {
+            <select class="form-control" disabled>
+                <option>Loading...</option>
+            </select>
+        }
+        else
+        {
+            <select class="form-control" id="formControlSelect" @onchange="OnSelectedChanged">
+                <option disabled selected>Select a source location</option>
+                @foreach (var location in Locations)
+                {
+                    <option value="@location.LocationId.Value">@location.Name</option>
+                }
+            </select>
+        }
+    </div>
+</div>
+
+

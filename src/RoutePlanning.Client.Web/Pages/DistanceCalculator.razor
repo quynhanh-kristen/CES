@@ -1,0 +1,23 @@
+﻿@page "/distancecalculator"
+
+<PageTitle>Distance Calculator</PageTitle>
+
+<h1>Distance Calculator</h1>
+
+<LocationSelector Label="Source" Locations="@Locations" @bind-Selected="SelectedSource"></LocationSelector>
+<LocationSelector Label="Destination" Locations="@Locations" @bind-Selected="SelectedDestination"></LocationSelector>
+
+<button class="btn btn-primary mb-5" @onclick="CalculateDistance">Calculate</button>
+
+<br />
+
+@if (DisplayDistance is not null)
+{
+    <span class="alert alert-primary">
+        <span>@DisplaySource</span>
+        <span class="oi oi-arrow-right mr-1" aria-hidden="true"></span>
+        <span>@DisplayDistance km</span>
+        <span class="oi oi-arrow-right" aria-hidden="true"></span>
+        <span>@DisplayDestination</span>
+    </span>
+}
