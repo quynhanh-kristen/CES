@@ -186,22 +186,22 @@ public static class DatabaseInitialization
         CreateTwoWayConnection(victoriasoen, mocambique, 8, 0, 2);
 
        //ship list
-        CreateTwoWayConnection(tanger, kanariskeOer, 36, 0, 0);
-        CreateTwoWayConnection(dakar, kanariskeOer, 60, 0, 0);
-        CreateTwoWayConnection(dakar, sierraLeone, 36, 0, 0);
-        CreateTwoWayConnection(dakar, stHelena, 120, 0, 0);
-        CreateTwoWayConnection(sierraLeone, guldkysten, 48, 0, 0);
-        CreateTwoWayConnection(guldkysten, slavekysten, 48, 0, 0);
-        CreateTwoWayConnection(slavekysten, hvalbugten, 108, 0, 0);
-        CreateTwoWayConnection(hvalbugten, kapstaden, 36, 0, 0);
-        CreateTwoWayConnection(stHelena, kapstaden, 108, 0, 0);
-        CreateTwoWayConnection(stHelena, hvalbugten, 108, 0, 0);
-        CreateTwoWayConnection(kapstaden, kapStMarie, 96, 0, 0);
-        CreateTwoWayConnection(kapStMarie, mocambique, 36, 0, 0);
-        CreateTwoWayConnection(kapGuardafui, amatave, 96, 0, 0);
-        CreateTwoWayConnection(mocambique, kapGuardafui, 96, 0, 0);
-        CreateTwoWayConnection(cairo, suakin, 48, 0, 0);
-        CreateTwoWayConnection(suakin, kapGuardafui, 48, 0, 0);
+        CreateTwoWayConnection(tanger, kanariskeOer, 36, 5, 0);
+        CreateTwoWayConnection(dakar, kanariskeOer, 60, 5, 0);
+        CreateTwoWayConnection(dakar, sierraLeone, 36, 5, 0);
+        CreateTwoWayConnection(dakar, stHelena, 120, 5, 0);
+        CreateTwoWayConnection(sierraLeone, guldkysten, 48, 5, 0);
+        CreateTwoWayConnection(guldkysten, slavekysten, 48, 5, 0);
+        CreateTwoWayConnection(slavekysten, hvalbugten, 108, 5, 0);
+        CreateTwoWayConnection(hvalbugten, kapstaden, 36, 5, 0);
+        CreateTwoWayConnection(stHelena, kapstaden, 108, 5, 0);
+        CreateTwoWayConnection(stHelena, hvalbugten, 108, 5, 0);
+        CreateTwoWayConnection(kapstaden, kapStMarie, 96, 5, 0);
+        CreateTwoWayConnection(kapStMarie, mocambique, 36, 5, 0);
+        CreateTwoWayConnection(kapGuardafui, amatave, 96, 5, 0);
+        CreateTwoWayConnection(mocambique, kapGuardafui, 96, 5, 0);
+        CreateTwoWayConnection(cairo, suakin, 48, 5, 0);
+        CreateTwoWayConnection(suakin, kapGuardafui, 48, 5, 0);
     }
 
     private static async Task SeedUsers(RoutePlanningDatabaseContext context)
