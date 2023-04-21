@@ -18,7 +18,7 @@ public sealed class RoutesController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpGet("[action]")]
+    [HttpGet("helloitsme")]
     public Task<string> HelloWorld()
     {
         return Task.FromResult("Hello World!");
