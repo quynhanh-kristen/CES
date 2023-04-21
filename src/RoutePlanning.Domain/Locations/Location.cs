@@ -17,9 +17,9 @@ public sealed class Location : AggregateRoot<Location>
 
     public IReadOnlyCollection<Connection> Connections => _connections.AsReadOnly();
 
-    public Connection AddConnection(Location destination, int distance)
+    public Connection AddConnection(Location destination, int distance, int price, int typeOfTransport)
     {
-        Connection connection = new(this, destination, distance);
+        Connection connection = new(this, destination, distance, price, typeOfTransport);
 
         _connections.Add(connection);
 
