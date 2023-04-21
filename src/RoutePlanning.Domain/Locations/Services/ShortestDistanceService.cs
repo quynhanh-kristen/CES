@@ -248,6 +248,7 @@ public sealed class ShortestDistanceService : IShortestDistanceService
         }
 
         GetExternalRouteData(routes);
+        Console.WriteLine("Here");
 
         return 10; // TODO Return list of routes instead
     }
