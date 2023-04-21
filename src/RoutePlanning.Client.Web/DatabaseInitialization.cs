@@ -40,11 +40,13 @@ public static class DatabaseInitialization
         var dakar = new Location("Dakar");
         await context.AddAsync(dakar);
 
+
         var sierraLeone = new Location("Sierra Leone");
         await context.AddAsync(sierraLeone);
 
         var guldkysten = new Location("Guldkysten");
         await context.AddAsync(guldkysten);
+
 
         var stHelena = new Location("St. Helena");
         await context.AddAsync(stHelena);
