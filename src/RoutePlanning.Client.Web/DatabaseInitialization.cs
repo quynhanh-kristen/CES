@@ -39,15 +39,15 @@ public static class DatabaseInitialization
         await context.AddAsync(warsaw);
 
 
-        var warsaw = new Location("Warsaw");
-        await context.AddAsync(warsaw);
+        //var warsaw = new Location("Warsaw");
+        //await context.AddAsync(warsaw);
 
         CreateTwoWayConnection(berlin, warsaw, 573);
         CreateTwoWayConnection(berlin, copenhagen, 763);
         CreateTwoWayConnection(berlin, paris, 1054);
         CreateTwoWayConnection(copenhagen, paris, 1362);
 
-        CreateTwoWayConnection(HAVALBUGTEN, SLAVEKYSTEN, 8);
+        //CreateTwoWayConnection(HAVALBUGTEN, SLAVEKYSTEN, 8);
 
 
     }
